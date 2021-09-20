@@ -16,22 +16,22 @@ WEBSITE: WWW.BIENCHIDOCUTZ.COM
 
 @font-face {
   font-family: "agency-reg";
-  src: url(./fonts/AGENCYR.TTF);
+  src: url(../fonts/AGENCYR.TTF);
 }
 
 @font-face {
   font-family: "agency-bold";
-  src: url(./fonts/AGENCYB.TTF);
+  src: url(../fonts/AGENCYB.TTF);
 }
 
 @font-face {
   font-family: "kunstler";
-  src: url(./fonts/KUNSTLER.TTF);
+  src: url(../fonts/KUNSTLER.TTF);
 }
 
 @font-face {
   font-family: "tw-cent";
-  src: url(./fonts/TCM_____.TTF);
+  src: url(../fonts/TCM_____.TTF);
 }
 
 /*=========================================================
@@ -936,7 +936,8 @@ main {
   .cuts {
     width: 100%;
     height: 50rem;
-    background-image: url(./images/profile2.png);
+    position: relative;
+    background-image: url(../images/profile2.png);
     background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1038,7 +1039,8 @@ main {
     .swiper-container {
       width: 85%;
       height: 25rem;
-      margin-top: 4rem;
+      margin: 4rem auto 0;
+      overflow: hidden;
 
       //------------MEDIA QUERIES----------------
 
@@ -1089,8 +1091,7 @@ main {
       //------------------------
 
       .swiper-wrapper {
-        width: 100%;
-        height: 100%;
+        @include keep-it-hundo;
 
         .swiper-slide {
           width: 100%;
@@ -1150,12 +1151,20 @@ main {
         width: 4rem;
         height: 4rem;
         color: $color-lite;
+        top: 55%;
+        left: 5%;
+
+        @include desktop {
+          & {
+            top: 50%;
+          }
+        }
 
         &::after {
           content: "";
           @include keep-it-hundo;
           @include absol-center;
-          background-image: url(./images/prev.png);
+          background-image: url(../images/prev.png);
           background-size: contain;
           background-position: center;
           z-index: 1;
@@ -1166,12 +1175,20 @@ main {
         width: 4rem;
         height: 4rem;
         color: $color-lite;
+        top: 55%;
+        right: 5%;
+
+        @include desktop {
+          & {
+            top: 50%;
+          }
+        }
 
         &::after {
           content: "";
           @include keep-it-hundo;
           @include absol-center;
-          background-image: url(./images/next.png);
+          background-image: url(../images/next.png);
           background-size: contain;
           background-position: center;
           z-index: 1;
@@ -1182,10 +1199,12 @@ main {
         width: 1.5rem;
         height: 1.5rem;
         opacity: 0.7;
+        border: 1px solid $color-gold;
       }
 
       .swiper-pagination-bullet-active {
         background: $color-lite;
+        border: none;
       }
     }
   }
@@ -1195,7 +1214,7 @@ main {
   .gallery {
     width: 100%;
     height: auto;
-    background-image: url(./images/camera.png);
+    background-image: url(../images/camera.png);
     background-size: 85% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1351,7 +1370,7 @@ main {
   .contact {
     width: 100%;
     height: 55rem;
-    background-image: url(./images/email.png);
+    background-image: url(../images/email.png);
     background-size: 85% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1522,7 +1541,7 @@ main {
   .location {
     width: 100%;
     height: 50rem;
-    background-image: url(./images/gps.png);
+    background-image: url(../images/gps.png);
     background-size: 50% auto;
     background-repeat: no-repeat;
     background-position: center;
