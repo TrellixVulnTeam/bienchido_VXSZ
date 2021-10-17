@@ -77,7 +77,7 @@ header {
   height: 10rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   background-color: #050505;
   box-shadow: 0.3rem 0.3rem 1rem #050505;
 }
@@ -785,6 +785,7 @@ main .cuts .cuts-info .cuts-p {
 
 main .cuts .swiper-container {
   width: 85%;
+  max-width: 120rem;
   height: 25rem;
   margin: 4rem auto 0;
   overflow: hidden;
@@ -899,8 +900,14 @@ main .cuts .swiper-container .swiper-button-prev {
   width: 4rem;
   height: 4rem;
   color: #faf5f5;
-  top: 55%;
+  top: 68%;
   left: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  main .cuts .swiper-container .swiper-button-prev {
+    top: 58%;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
@@ -931,8 +938,14 @@ main .cuts .swiper-container .swiper-button-next {
   width: 4rem;
   height: 4rem;
   color: #faf5f5;
-  top: 55%;
+  top: 68%;
   right: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  main .cuts .swiper-container .swiper-button-next {
+    top: 58%;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
