@@ -1042,6 +1042,7 @@ main {
       height: 25rem;
       margin: 4rem auto 0;
       overflow: hidden;
+      position: relative;
 
       //------------MEDIA QUERIES----------------
 
@@ -1071,20 +1072,12 @@ main {
 
       @include largeDesktop {
         & {
-          width: 65%;
           height: 50rem;
-        }
-      }
-
-      @include largeDesktop2 {
-        & {
-          width: 55%;
         }
       }
 
       @include largeDesktopUltra {
         & {
-          width: 45%;
           height: 55rem;
         }
       }
@@ -1128,20 +1121,7 @@ main {
               & {
                 width: 25rem;
                 height: 25rem;
-              }
-            }
-
-            @include largeDesktop {
-              & {
-                width: 30rem;
-                height: 30rem;
-              }
-            }
-
-            @include largeDesktopUltra {
-              & {
-                width: 35rem;
-                height: 35rem;
+                padding: 2rem 1rem;
               }
             }
           }
@@ -1164,6 +1144,7 @@ main {
         @include desktop {
           & {
             top: 50%;
+            left: 1%;
           }
         }
 
@@ -1194,6 +1175,7 @@ main {
         @include desktop {
           & {
             top: 50%;
+            right: 1%;
           }
         }
 
@@ -1443,6 +1425,7 @@ main {
       width: 100%;
       max-width: 120rem;
       height: 35rem;
+      margin: 0 auto;
       padding: 2rem;
       display: flex;
       flex-direction: column;
@@ -1465,20 +1448,12 @@ main {
       @include largeDesktop {
         & {
           height: 50rem;
-          padding: 7rem 20rem;
         }
       }
 
       @include largeDesktop2 {
         & {
           height: 55rem;
-          padding: 7rem 35rem;
-        }
-      }
-
-      @include largeDesktopUltra {
-        & {
-          padding: 7rem 55rem;
         }
       }
 
@@ -1614,6 +1589,7 @@ main {
       width: 100%;
       max-width: 120rem;
       height: calc(100% - 9rem);
+      margin: 0 auto;
       padding: 2rem;
       display: flex;
       flex-direction: column;
@@ -1624,24 +1600,6 @@ main {
       @include desktop {
         & {
           padding: 7rem;
-        }
-      }
-
-      @include largeDesktop {
-        & {
-          padding: 0 15rem 7rem;
-        }
-      }
-
-      @include largeDesktop2 {
-        & {
-          padding: 0 25rem 6rem;
-        }
-      }
-
-      @include largeDesktopUltra {
-        & {
-          padding: 0 35rem 6rem;
         }
       }
 
