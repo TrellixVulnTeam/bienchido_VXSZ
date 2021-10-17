@@ -1189,6 +1189,7 @@ main .contact {
 
 main .contact .info-container {
   width: 100%;
+  max-width: 120rem;
   height: 35rem;
   padding: 2rem;
   display: flex;
@@ -1351,6 +1352,7 @@ main .location {
 
 main .location .locate-container {
   width: 100%;
+  max-width: 120rem;
   height: calc(100% - 9rem);
   padding: 2rem;
   display: flex;
