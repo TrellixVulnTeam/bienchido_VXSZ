@@ -444,25 +444,24 @@ main {
       width: 100%;
       height: 9rem;
       font-family: "tw-cent", sans-serif;
-      font-size: 5rem;
-      -webkit-text-stroke: 0.2rem #a58620;
+      font-size: 4rem;
+      -webkit-text-stroke: 0.1rem #a58620;
       -webkit-text-fill-color: transparent;
       display: flex;
       justify-content: center;
       align-items: center; }
       @media only screen and (min-width: 480px) {
         main .sections .section-title {
-          font-size: 6rem; } }
+          font-size: 5rem; } }
       @media only screen and (min-width: 768px) {
         main .sections .section-title {
-          font-size: 7rem; } }
+          font-size: 6rem; } }
       @media only screen and (min-width: 1224px) {
         main .sections .section-title {
-          font-size: 8rem;
-          -webkit-text-stroke: 0.27rem #a58620; } }
+          font-size: 7rem; } }
       @media only screen and (min-width: 1824px) {
         main .sections .section-title {
-          font-size: 9rem; } }
+          font-size: 8rem; } }
   main .cuts {
     width: 100%;
     height: 50rem;
@@ -485,11 +484,12 @@ main {
         background-size: 45% auto; } }
     @media only screen and (min-width: 1224px) {
       main .cuts {
-        height: 80rem; } }
+        height: 80rem;
+        background-size: 35% auto; } }
     @media only screen and (min-width: 1824px) {
       main .cuts {
         height: 100rem;
-        background-size: 35%; } }
+        background-size: 30%; } }
     @media only screen and (min-width: 2559px) {
       main .cuts {
         background-size: 25%; } }
@@ -750,19 +750,19 @@ main {
     @media only screen and (min-width: 1224px) {
       main .contact {
         height: 70rem;
-        background-size: 50%; } }
+        background-size: 40%; } }
     @media only screen and (min-width: 1824px) {
       main .contact {
         height: 85rem;
-        background-size: 40%; } }
+        background-size: 35%; } }
     @media only screen and (min-width: 2559px) {
       main .contact {
         height: 95rem;
-        background-size: 35%; } }
+        background-size: 25%; } }
     @media only screen and (min-width: 3439px) {
       main .contact {
         height: 100rem;
-        background-size: 27%; } }
+        background-size: 20%; } }
     main .contact .info-container {
       width: 100%;
       max-width: 120rem;
@@ -851,17 +851,17 @@ main {
     @media only screen and (min-width: 1224px) {
       main .location {
         height: 80rem;
-        background-size: 33%; } }
+        background-size: 20%; } }
     @media only screen and (min-width: 1824px) {
       main .location {
         height: 100rem;
-        background-size: 27%; } }
+        background-size: 20%; } }
     @media only screen and (min-width: 2559px) {
       main .location {
-        background-size: 20%; } }
+        background-size: 15%; } }
     @media only screen and (min-width: 3439px) {
       main .location {
-        background-size: 15%; } }
+        background-size: 10%; } }
     main .location .locate-container {
       width: 100%;
       max-width: 120rem;
@@ -871,12 +871,10 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
-      @media only screen and (min-width: 1224px) {
-        main .location .locate-container {
-          padding: 7rem; } }
       main .location .locate-container .locate {
-        width: 100%;
+        width: 80%;
         height: 50%;
+        margin: 0 auto;
         font-size: 2rem;
         text-transform: capitalize;
         display: flex;

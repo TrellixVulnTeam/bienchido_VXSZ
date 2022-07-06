@@ -900,8 +900,8 @@ main {
       width: 100%;
       height: 9rem;
       font-family: $secondary-font;
-      font-size: 5rem;
-      -webkit-text-stroke: 0.2rem $color-gold;
+      font-size: 4rem;
+      -webkit-text-stroke: 0.1rem $color-gold;
       -webkit-text-fill-color: transparent;
       @include flex-center;
 
@@ -909,26 +909,25 @@ main {
 
       @include phonePortrait {
         & {
-          font-size: 6rem;
+          font-size: 5rem;
         }
       }
 
       @include tabletPortrait {
         & {
-          font-size: 7rem;
+          font-size: 6rem;
         }
       }
 
       @include desktop {
         & {
-          font-size: 8rem;
-          -webkit-text-stroke: 0.27rem $color-gold;
+          font-size: 7rem;
         }
       }
 
       @include largeDesktop {
         & {
-          font-size: 9rem;
+          font-size: 8rem;
         }
       }
     }
@@ -972,13 +971,14 @@ main {
     @include desktop {
       & {
         height: 80rem;
+        background-size: 35% auto;
       }
     }
 
     @include largeDesktop {
       & {
         height: 100rem;
-        background-size: 35%;
+        background-size: 30%;
       }
     }
 
@@ -1397,28 +1397,28 @@ main {
     @include desktop {
       & {
         height: 70rem;
-        background-size: 50%;
+        background-size: 40%;
       }
     }
 
     @include largeDesktop {
       & {
         height: 85rem;
-        background-size: 40%;
+        background-size: 35%;
       }
     }
 
     @include largeDesktop2 {
       & {
         height: 95rem;
-        background-size: 35%;
+        background-size: 25%;
       }
     }
 
     @include largeDesktopUltra {
       & {
         height: 100rem;
-        background-size: 27%;
+        background-size: 20%;
       }
     }
 
@@ -1563,26 +1563,26 @@ main {
     @include desktop {
       & {
         height: 80rem;
-        background-size: 33%;
+        background-size: 20%;
       }
     }
 
     @include largeDesktop {
       & {
         height: 100rem;
-        background-size: 27%;
+        background-size: 20%;
       }
     }
 
     @include largeDesktop2 {
       & {
-        background-size: 20%;
+        background-size: 15%;
       }
     }
 
     @include largeDesktopUltra {
       & {
-        background-size: 15%;
+        background-size: 10%;
       }
     }
 
@@ -1598,19 +1598,12 @@ main {
       flex-direction: column;
       justify-content: space-evenly;
 
-      //------------MEDIA QUERIES----------------
-
-      @include desktop {
-        & {
-          padding: 7rem;
-        }
-      }
-
       //------------------------
 
       .locate {
-        width: 100%;
+        width: 80%;
         height: 50%;
+        margin: 0 auto;
         font-size: 2rem;
         text-transform: capitalize;
         @include flex-center;
